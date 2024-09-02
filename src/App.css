@@ -1,0 +1,154 @@
+header {
+  background-color: rgb(97, 43, 178);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+header .logo {
+  background: linear-gradient(80deg, rgb(216, 11, 165), rgb(16, 119, 237), rgb(182, 19, 227));
+  background-clip: text;
+  background-size: cover;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: transparent;
+  padding: 10px 5px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 50px 5px;
+}
+
+#search {
+  width: 60%;
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: white;
+  outline: none;
+  background-color: rgb(102, 54, 170);
+  border: none;
+  transition: .700s;
+}
+
+button {
+  padding: 0px 30px;
+  background-color: rgb(96, 31, 193);
+  margin: 0 6px;
+  border: none;
+  border-radius: 17px;
+  font-weight: bold;
+  color: wheat;
+  cursor: pointer;
+  transition: .700s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0px;
+}
+
+#search:hover {
+  background-color: rgb(119, 86, 167);
+}
+
+button:hover {
+  background-color: rgb(60, 26, 110);
+}
+
+.todos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todos>span {
+  font-weight: bolder;
+  font-size: x-large;
+  background: linear-gradient(80deg, rgb(16, 119, 237), rgb(216, 11, 165), rgb(182, 19, 227));
+  background-clip: text;
+  background-size: cover;
+  font-size: 2rem;
+  font-weight: bold;
+  color: transparent;
+}
+
+.content {
+  display: flex;
+  width: 50%;
+  gap: 25px;
+}
+
+.item {
+  text-decoration-color: black;
+  word-wrap: break-word;
+  text-align: start;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.checkbox {
+  padding: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 9px;
+}
+
+.todo {
+  margin: 20px auto;
+  width: 70%;
+  padding: 10px;
+  background-color: #494949;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: rgb(240, 235, 235);
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.todo:hover{
+  background-color: rgb(92, 92, 88);
+
+}
+
+div .btn-delete {
+  padding: 7px 19px;
+}
+
+.btn-edit{
+  padding: 0 30px;
+}
+
+@media screen and (max-width:750px) {
+  .todo{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:450px) {
+  :root{
+    font-size: 5px;
+  }
+
+  div .btn {
+    padding: 4px 12px;
+  }
+}
+
